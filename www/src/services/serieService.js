@@ -1,9 +1,6 @@
 class SerieService {
-  constructor({ serieRepository, jwt, SECRET_KEY, jwtUtil }) {
+  constructor({ serieRepository }) {
     this.serieRepository = serieRepository
-    this.jwt             = jwt 
-    this.SECRET_KEY      = SECRET_KEY
-    this.jwtUtil         = jwtUtil
   }
 
   async create(data) {

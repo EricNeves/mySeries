@@ -18,21 +18,15 @@ const UserRepository = require('../repositories/userRepository')
 const Users = require('../models/users')
 
 /**
- * Utils
- */
-const bcrypt  = require('../utils/bcrypt')
-
-/**
  * Instances
  */
 function generateInstance() {
-  const userRepository = new UserRepository({ Users, bcrypt })
+  const userRepository = new UserRepository({ Users })
 
   const dependencies = {
     userRepository,
     jwt,
-    SECRET_KEY,
-    bcrypt
+    SECRET_KEY
   }
 
   const userService = new UserService(dependencies)

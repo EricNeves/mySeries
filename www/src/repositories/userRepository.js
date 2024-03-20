@@ -29,7 +29,7 @@ class UserRepository {
 
     if (!user) return false
 
-    const verifyPassword = await this.bcrypt.comparePassword(password, user.password)
+    const verifyPassword = await user.comparePassword(password, user.password)
 
     if (!verifyPassword) return false
 

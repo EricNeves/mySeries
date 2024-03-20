@@ -1,18 +1,13 @@
 class UserService {
-  constructor({ userRepository, jwt, SECRET_KEY, bcrypt }) {
+  constructor({ userRepository, jwt, SECRET_KEY }) {
     this.userRepository = userRepository
     this.SECRET_KEY     = SECRET_KEY
     this.jwt            = jwt
-    this.bcrypt         = bcrypt
   }
 
   async create(body) {
     try {
-      const password = await this.bcrypt.hashPassword(body.password)
-
-      const fields = { ...body, password }
-
-      const user = await this.userRepository.save(fields)
+      const user = await this.userRepository.save(body)
 
       return user
 

@@ -1,8 +1,6 @@
 class UserService {
-  constructor({ userRepository, jwt, SECRET_KEY }) {
+  constructor({ userRepository }) {
     this.userRepository = userRepository
-    this.SECRET_KEY     = SECRET_KEY
-    this.jwt            = jwt
   }
 
   async create(body) {
@@ -19,13 +17,13 @@ class UserService {
 
   async authenticate(body) {
     try {
-      const auth = await this.userRepository.auth(body)
+      const token = await this.userRepository.auth(body)
 
-      if (!auth) {
+      if (!token) {
         return { unauthorized: 'Sorry, username/password is incorrect.' }
       }
 
-      return this.jwt.sign(auth, this.SECRET_KEY)
+      return token
 
     } catch (err) {
       return { error: err.message }

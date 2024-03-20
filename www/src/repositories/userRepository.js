@@ -1,7 +1,6 @@
 class UserRepository {
-  constructor({ Users, bcrypt }) {
+  constructor({ Users }) {
     this.Users  = Users
-    this.bcrypt = bcrypt
   }
 
   async save(data) {
@@ -33,11 +32,15 @@ class UserRepository {
 
     if (!verifyPassword) return false
 
-    return {
+    const payload = {
       id:       user._id,
       username: user.username,
       roles:    user.roles
     }
+
+    const jwt = await user.generateJWT(payload)
+
+    return jwt
   }
 
   async find(id) {

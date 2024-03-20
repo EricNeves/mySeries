@@ -1,7 +1,3 @@
-const jwt = require('jsonwebtoken')
-
-const SECRET_KEY = process.env.SECRET_KEY
-
 /**
  * Services
  */
@@ -24,9 +20,7 @@ function generateInstance() {
   const userRepository = new UserRepository({ Users })
 
   const dependencies = {
-    userRepository,
-    jwt,
-    SECRET_KEY
+    userRepository
   }
 
   const userService = new UserService(dependencies)

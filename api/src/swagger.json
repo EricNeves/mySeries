@@ -824,8 +824,16 @@
                     },
                     "comments": {
                       "type": "array",
-                      "items": {
-                        "type": "string"
+                      "items":  {
+                        "type": "object",
+                        "properties": {
+                          "text": {
+                            "type": "string"
+                          },
+                          "_id": {
+                            "type": "string"
+                          }
+                        }
                       }
                     }
                   }
@@ -927,8 +935,16 @@
                     },
                     "comments": {
                       "type": "array",
-                      "items": {
-                        "type": "string"
+                      "items":  {
+                        "type": "object",
+                        "properties": {
+                          "text": {
+                            "type": "string"
+                          },
+                          "_id": {
+                            "type": "string"
+                          }
+                        }
                       }
                     }
                   }
@@ -1014,9 +1030,7 @@
                     },
                     "comments": {
                       "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
+                      "items": []
                     }
                   }
                 }

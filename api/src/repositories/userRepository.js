@@ -34,8 +34,7 @@ class UserRepository {
 
     const payload = {
       id:       user._id,
-      username: user.username,
-      roles:    user.roles
+      username: user.username
     }
 
     const jwt = await user.generateJWT(payload)

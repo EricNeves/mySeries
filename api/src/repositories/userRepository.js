@@ -13,8 +13,6 @@ class UserRepository {
 
     await user.save()
 
-    if (!user) return false 
-
     return {
       id:       user._id,
       username: user.username

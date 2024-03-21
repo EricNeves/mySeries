@@ -46,7 +46,7 @@ UsersSchema.methods.generateJWT = function (payload) {
   return new Promise(async function (resolve, reject) {
     jwt.sign(payload, SECRET_KEY, (err, token) => {
       if (err) {
-        resolve(null)
+        resolve(err)
       }
 
       resolve(token)

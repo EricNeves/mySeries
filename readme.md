@@ -13,7 +13,7 @@
 <p align="center">Data de criação: Mar 17, 2024</p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/ericneves/myfavoritesquotes?display_timestamp=author&style=flat-square&logo=github&logoColor=white&labelColor=%236c6eff&color=yellow" alt="Github">
+  <img src="https://img.shields.io/github/last-commit/ericneves/mySeries?display_timestamp=author&style=flat-square&logo=github&labelColor=%235961FF&color=%230d1117" alt="Github">
   <img src="https://img.shields.io/github/languages/top/ericneves/myfavoritesquotes?style=flat-square&logo=php&logoColor=white">
   <img src="https://img.shields.io/github/license/ericneves/myfavoritesquotes?style=flat-square&color=%232563EB">
 </p>

@@ -62,3 +62,21 @@ $ cd mySeries && pnpm install
 $ docker-compose up -d --build
 
 ```
+
+### Processos
+
+```sh
+
+# Endpoint - Doc
+$ curl -I http://localhost:3333/doc/
+
+HTTP/1.1 200 OK
+
+```
+
+### License 
+
+<img src="https://img.shields.io/github/license/ericneves/myfavoritesquotes?style=flat-square&color=%232563EB">
+
+### Author 🧑‍💻
+<a href="https://www.instagram.com/ericneves_dev/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a> <a href="https://linkedin.com/in/ericnevesrr"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>

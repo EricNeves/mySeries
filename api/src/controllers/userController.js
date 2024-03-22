@@ -8,10 +8,10 @@ async function store({ userService }, req, res) {
 
   const user = await userService.create(fields)
 
-  if (user?.error) {
+  if (user.error) {
     res.status(400).json({
       success: false,
-      message: user?.error
+      message: user.error
     })
     return
   }
@@ -34,18 +34,18 @@ async function login({ userService }, req, res) {
 
   const auth = await userService.authenticate(fields)
 
-  if (auth?.unauthorized) {
+  if (auth.unauthorized) {
     res.status(401).json({
       success: false,
-      message: auth?.unauthorized
+      message: auth.unauthorized
     })
     return
   }
 
-  if (auth?.error) {
+  if (auth.error) {
     res.status(400).json({
       success: false,
-      message: auth?.error
+      message: auth.error
     })
     return
   }
@@ -60,10 +60,10 @@ async function login({ userService }, req, res) {
 async function user({ userService }, req, res) {
   const user = await userService.fetchUser(req.user)
 
-  if (user?.error) {
+  if (user.error) {
     res.status(400).json({
       success: false,
-      message: user?.error
+      message: user.error
     })
     return
   }

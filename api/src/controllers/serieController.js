@@ -7,10 +7,10 @@ async function store({ serieService }, req, res) {
 
   const serie = await serieService.create(body)
 
-  if (serie?.error) {
+  if (serie.error) {
     res.status(400).json({
       success: false,
-      message: serie?.error
+      message: serie.error
     })
     return
   }
@@ -46,10 +46,10 @@ async function get({ serieService }, req, res) {
 
   const serie = await serieService.fetchByID(fields)
 
-  if (serie?.error) {
+  if (serie.error) {
     res.status(400).json({
       success: false,
-      message: serie?.error
+      message: serie.error
     })
     return
   }
@@ -76,10 +76,10 @@ async function changeSerie({ serieService }, req, res) {
 
   const serie = await serieService.updateSerie(fields)
 
-  if (serie?.error) {
+  if (serie.error) {
     res.status(400).json({
       success: false,
-      message: serie?.error
+      message: serie.error
     })
     return
   }
@@ -103,10 +103,10 @@ async function removeSerie({ serieService }, req, res) {
 
   const serie = await serieService.deleteSerie(fields)
 
-  if (serie?.error) {
+  if (serie.error) {
     res.status(400).json({
       success: false,
-      message: serie?.error
+      message: serie.error
     })
     return
   }
@@ -132,10 +132,10 @@ async function storeComment({ serieService }, req, res) {
 
   const serie = await serieService.createComment(fields)
 
-  if (serie?.error) {
+  if (serie.error) {
     res.status(400).json({
       success: false,
-      message: serie?.error
+      message: serie.error
     })
     return
   }
@@ -162,10 +162,10 @@ async function changeComment({ serieService }, req, res) {
 
   const serie = await serieService.updateComment(fields)
 
-  if (serie?.error) {
+  if (serie.error) {
     res.status(400).json({
       success: false,
-      message: serie?.error
+      message: serie.error
     })
     return
   }
@@ -190,10 +190,10 @@ async function removeComment({ serieService }, req, res) {
 
   const serie = await serieService.deleteComment(fields)
 
-  if (serie?.error) {
+  if (serie.error) {
     res.status(400).json({
       success: false,
-      message: serie?.error
+      message: serie.error
     })
     return
   }

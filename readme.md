@@ -7,7 +7,7 @@
 </h1>
 
 <h4 align="center">
-  **API Restfull** desenvolvida com NodeJS, ExpressJS, MongoDB, Autenticação por JWT, Testes Automatizados e entre outros recursos.
+  API Restfull desenvolvida com NodeJS, ExpressJS, MongoDB, Autenticação por JWT, Testes Automatizados e entre outros recursos.
 </h4> 
 
 <p align="center">Data de criação: Mar 17, 2024</p>
@@ -22,9 +22,9 @@
 
 ### Descrição
 
-My Series API, aplicação baseada no projeto <a href="https://github.com/devpleno/fsm-minhas-series-rest">My Series</a>, desenvolvido no curso FullStack Master da plataforma <a href="https://devpleno.com/">Devpleno</a>.
+<b>My Series API</b>, aplicação baseada no projeto <a href="https://github.com/devpleno/fsm-minhas-series-rest">My Series</a>, desenvolvido no curso <b>FullStack Master</b> da plataforma <a href="https://devpleno.com/">Devpleno</a>.
 
-Principais funcionalidades:
+<b>Principais funcionalidades:</b>
   * Criar Usuário
   * Autenticação por JWT
   * Adicionar/Ler/Atualizar e Remover Séries
@@ -32,7 +32,7 @@ Principais funcionalidades:
 
 ### Recursos
 
-Além da ideia do projeto, foi feita a implementação do padrão de projeto Layered Architecture (N Camandas), Testes Automatizados, documentação da api com Swagger e Docker para a execução completa do projeto.
+Além da ideia do projeto, foi feita a implementação do padrão de projeto <b>Layered Architecture (N Camandas)</b>, <b>Testes Automatizados</b>, documentação da api com <b>Swagger</b> e <b>Docker</b> para a execução completa do projeto.
 
 * API:
   * node:20

@@ -47,3 +47,18 @@ Além da ideia do projeto, foi feita a implementação do padrão de projeto <b>
   * mongodb:latest
 * Devops:
   * Docker
+
+### Execução
+
+```sh
+
+# Clone Repository
+$ git clone https://github.com/EricNeves/mySeries.git
+
+# Install Dependencies
+$ cd mySeries && pnpm install
+
+# Execute Docker
+$ docker-compose up -d --build
+
+```

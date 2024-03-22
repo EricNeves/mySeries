@@ -1,14 +1,14 @@
 version: '3'
 services:
   api:
-    container_name: myseriesapi
     build:
       context: ./api
       dockerfile: Dockerfile
     ports:
       - "3333:3333"
+    depends_on:
+      - mongo
   mongo:
-    container_name: myseriesdb
     image: mongo
     ports:
       - "27017:27017"

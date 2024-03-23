@@ -74,6 +74,15 @@ HTTP/1.1 200 OK
 
 ```
 
+### Testes
+
+```sh
+
+# Execute Test
+$ pnpm test
+
+```
+
 ### License 
 
 <img src="https://img.shields.io/github/license/ericneves/mySeries?style=flat-square&logo=github&labelColor=%231F2937&color=%23374151">

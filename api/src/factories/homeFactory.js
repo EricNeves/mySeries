@@ -13,7 +13,12 @@ const HomeRepository = require('../repositories/homeRepository')
  */
 function generateInstance() {
   const homeRepository = new HomeRepository()
-  const homeService    = new HomeService(homeRepository)
+
+  const dependencies = {
+    homeRepository
+  }
+
+  const homeService = new HomeService(dependencies)
 
   return homeService
 }

@@ -1,5 +1,5 @@
 class HomeService {
-  constructor(homeRepository) {
+  constructor({ homeRepository }) {
     this.homeRepository = homeRepository
   }
 
